@@ -1,0 +1,86 @@
+/* BOTONES !*/
+.botonActual {
+    text-decoration: none;
+    background-color: $color-fuentes-oscuro;
+    border: 2px solid $color-botones-claro;
+    color: $color-fondo-oscuro;
+    padding: 3px;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+
+.boton {
+    text-decoration: none;
+    color: $color-fondo-claro;
+    background-color: $color-fondo-oscuro;
+    border: 2px solid $color-fondo-claro;
+    padding: 3px;
+    border-radius: 1rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+    
+
+    &:hover {
+        border: 2px solid $color-fondo-oscuro;
+        background-color: $color-fondo-claro;
+        color: $color-fondo-oscuro;
+    }
+}
+
+.botonTienda {
+    text-decoration: none;
+    color: $color-fuentes-claro;
+    background-color: $color-botones-tienda-oscuro;
+    border: 2px solid $color-fuentes-claro;
+    padding: 3px;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+
+    &:hover {
+        padding: 4px;
+        border: 2px solid $color-fuentes-claro;
+        color: $color-fuentes-oscuro;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.form-control {
+    background-color: $color-fondo-claro;
+    border: 2px solid $color-fuentes-claro;
+}
+
+.botonLeer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 20px;
+    background-color: $color-fuentes-oscuro;
+    color: $color-fuentes-claro;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.siguienteHero {
+    position: relative;
+}
+
+.botonDark {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-fuentes-claro;
+    background-color: $color-tarjetas-oscuro;
+    padding: 3px;
+    border-radius: 0.5rem;
+    font-weight: 800;
+
+    &:hover {
+        color:$color-fuentes-oscuro;
+        background-color: $color-tarjetas-claro;
+    }
+}

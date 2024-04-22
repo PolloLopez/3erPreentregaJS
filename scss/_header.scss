@@ -1,0 +1,28 @@
+/* ENCABEZADO//HEADER */
+@import "variables";
+
+.encabezado {
+  display: flex;
+  height: 8rem;
+//  padding: 1.0rem 0;
+  padding-block: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// .header {
+//   background-color: pink;
+//   color: yellowgreen;
+//   padding-block: 1rem;
+//}
+
+h1 {
+  display: inline-block;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: $color-fuentes-claro;
+}
+
+
+
+

@@ -1,0 +1,23 @@
+/* Galería */
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1rem; 
+}
+
+.foto {
+    margin-top: 1rem;
+    display: block;
+    border-radius: 4rem;
+    filter: grayscale(65%);
+    object-fit: cover;
+
+    &:hover {
+        filter: grayscale(0%);
+        border-radius: 2rem;
+        transition: all 0.1s;
+    }
+}
+
+

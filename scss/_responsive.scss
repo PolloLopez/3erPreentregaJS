@@ -1,0 +1,94 @@
+/* Medias Queries! */
+
+.oculto {
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+    .encabezado {
+        margin-top: 1rem;
+    }
+
+    .tituloPrincipal h1 {
+        display: none;
+    }
+
+    .imagenMuestra {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .hero {
+        margin-top: auto;
+        position: relative;
+    }
+
+    .contenedorTienda {
+        grid-template-columns: 2fr;
+    }
+
+    .galeria {
+        margin-top: 1rem;
+    }
+
+    .footer {
+        align-items: center;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 599px) {
+
+    /* Estilos para pantallas entre 200px y 499px */
+    // .botonLeer {
+    //     display: inline-block;
+    //     opacity: 0.5;
+    //     position: relative;
+    //     bottom: auto;
+    //     left: auto;
+    //     transform: none;
+    //     margin: 1rem;
+    //     width: 50%;
+    // }
+
+    .descripcionP {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    /* Estilos para pantallas entre 500px y 1024px */
+    // .botonLeer {
+    //     display: none;
+    // }
+
+    .descripcionP {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    /* Estilos para pantallas mayores a 1025px */
+    // .botonLeer {
+    //     display: none;
+    // }
+
+    .descripcionP {
+        display: block;
+    }
+}
+
+@media (min-width: 406px) {
+
+    /* Estilos para pantallas mayores a 406px */
+    /* galería */
+    .galeria {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+    }
+}
+

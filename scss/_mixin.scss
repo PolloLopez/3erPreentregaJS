@@ -1,0 +1,19 @@
+.imgLogo {
+    height: 7.5rem;
+    transition: transform 2.5s;
+    transform: rotate(360deg);
+    }
+
+  @keyframes rotateInfinitely {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+  
+  .imgLogo:hover {
+    animation: rotateInfinitely 2.4s infinite linear;
+  }
+  

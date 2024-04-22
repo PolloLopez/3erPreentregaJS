@@ -1,0 +1,48 @@
+/* FOOTER !*/
+
+footer {
+    padding: 3rem;
+    border-top: 2px double $color-botones-tienda-oscuro;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h3 {
+    text-align: center;
+    color: $color-fuentes-oscuro;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+footer p {
+    font-weight: 900;
+    color: $color-fuentes-oscuro;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.logoRedes {
+    color: $color-botones-tienda-oscuro;
+    text-align: center;
+    padding: 2rem;
+    cursor: pointer;
+    font-size: 4rem;
+
+    &:hover {
+        font-size: 4.5rem;
+        color: $color-tarjetas-oscuro;
+    }
+}
+
+.logoWhatsapp {
+    width: 5rem;
+    position: fixed;
+    bottom: 40px;
+    right: 1.5rem;
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &:hover {
+        width: 6rem;
+    }
+}

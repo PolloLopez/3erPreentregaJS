@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="El mago pollo, un poco payaso, malabares, comedia, stand up, tecnicas teatrales... de esa mezcla salio ese artista que tanto disfruta">
+    <title>Pollo Magia</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo1.png">
+
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- BS ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- CSS MIO -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+
+<body class="light-mode container-fluid">
+    <!-- HEADER -->
+    <header class="navbar navbar-expand-lg fixed-right encabezado">
+        <div class="container-fluid">
+            <a class="nav-brand tituloPrincipal" href="../index.html">
+                <img class="imgLogo" src="img/logo1.png" alt="Logo Pollo">
+                <h1 class="tituloEncabezado">Pollo Magia</h1>
+            </a>
+
+            <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <nav class="collapse navbar-collapse justify-content-end z-1" id="navbarNav">
+                <ul
+                    class="navbar-nav flex-column flex-sm-row menu-lista d-flex flex-column align-items-center justify-content-center">
+                    <li class="nav-item my-2">
+                        <a href="index.html" class="botonActual">Inicio</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="./html/galeria.html" class="boton">Galeria</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="./html/circorodante.html" class="boton">Circo</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="./html/tienda.html" class="boton">Tienda</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="./html/contacto.html" class="boton">Contacto</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+
+    </header>
+    <div class="botonDark">
+        <button id="color-mode" class="btn">Oscuro</button>
+    </div>
+
+
+    <!-- HERO / BANNER -->
+    <section class="hero d-flex flex-column justify-content-center align-items-center siguienteHero"
+        style="margin-top: 60px;">
+        <div class="containerHero">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-11 col-sm-9 text-center descripcionHero">
+                    <h2>El espectáculo del mago <span>pollo</span> se asemeja a subirse a un tren en el que recorres
+                        nuevos paisajes, del que es difícil querer bajarse.</h2>
+                    <p class="descripcionP oculto">Las distintas paradas del mismo se caracterizan por ser dinámicas y
+                        flexibles las cuales
+                        se ajustan a la audiencia, permitiendo que tanto niños, adolescentes y adultos sean parte
+                        del maravilloso encuentro con la magia. Mediante el humor y el juego compartido con quienes
+                        me acompañan en este viaje, abordamos juegos de ilusionismo y predicciones utilizando cartas y
+                        objetos cotidianos, recreando situaciones asombrosas y únicas. Al llegar el final del
+                        viaje, cuando parece finalizar la ilusion. Uno se lleva no solo la sonrisa del momento
+                        vivido, sino la sensación de saber que podemos creer. Los invito a ser parte de este
+                        viaje, para que te ayude a recordar que todos tenemos magia dentro nuestro!</p>
+                </div>
+            </div>
+        </div>
+        <button class="botonLeer" onclick="toggleTexto()">Leer más</button>
+    </section>
+
+    <!-- GALERIA -->
+    <section>
+        <div class="row">
+            <img class="col-xl-4 col-md-4 col-sm-10 mx-auto foto" src="./img/foto1.jpg" alt="mercedes">
+            <img class="col-xl-4 col-md-4 col-sm-10 mx-auto foto" src="./img/foto2.jpg" alt="plaza san luis">
+            <img class="col-xl-4 col-md-4 col-sm-10 mx-auto foto" src="./img/foto3.jpg" alt="circo rodante">
+        </div>
+    </section>
+
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=2324589620&text=Hola!,%20pollo%20estoy%20en%20tu%20pagina%20web"
+            target="_blank" alt="hablame al whatsapp">
+            <img class="logoWhatsapp" src="img/whatsapp.png" alt="Logo de whatsapp">
+        </a>
+    </div>
+
+    <footer class="footer">
+        <div>
+            <a href="https://www.facebook.com/PolloLopezMagia" target="_blank">
+                <i class="bi bi-facebook logoRedes" alt="ir a facebook"></i>
+            </a>
+
+            <a href="https://www.instagram.com/pollomagia/" target="_blank">
+                <i class="bi bi-instagram logoRedes" alt="ir a instagram"></i>
+            </a>
+
+
+            <a href="https://www.youtube.com/@PolloLopez" target="_blank">
+                <i class="bi bi-youtube logoRedes" alt="ir a youtube"></i>
+            </a>
+        </div>
+
+        <p>que la magia los acompañe</p>
+        <h3>Pollo Magia - Todos los derechos reservados</h3>
+    </footer>
+
+    <script>
+    </script>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

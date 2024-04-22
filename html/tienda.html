@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="El mago pollo, es algo payaso, malabares, comedia, stand up, tecnicas teatrales y de esa mezcla salio este artista que tanto disfruta de su actividad">
+    <title>Pollo Magia - Tienda!</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo1.png">
+
+    <!-- TOASTIFY -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- BS ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- CSS MIO -->
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body class="light-mode container-fluid bodyTienda">
+    <!-- HEADER -->
+    <header class="navbar navbar-expand-lg fixed-right encabezado">
+        <div class="container-fluid">
+            <a class="nav-brand tituloPrincipal" href="../index.html">
+                <img class="imgLogo" src="../img/logo1.png" alt="Logo Pollo">
+                <h1>Tienda</h1>
+            </a>
+            <button class="navbar-toggler order-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse justify-content-end z-1" id="navbarNav">
+                <ul
+                    class="navbar-nav flex-column flex-sm-row menu-lista d-flex flex-column align-items-center justify-content-center">
+                    <li class="nav-item my-2">
+                        <a href="../index.html" class="boton">Inicio</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="galeria.html" class="boton">Galeria</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="circorodante.html" class="boton">Circo</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="tienda.html" class="botonActual">Tienda</a>
+                    </li>
+                    <li class="nav-item my-2">
+                        <a href="contacto.html" class="boton">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="botonDark">
+        <button id="color-mode" class="btn">Oscuro</button>
+    </div>
+
+<!--
+
+    <section class="contenedorTienda">
+        <div class="tienda">
+            <img class="tiendaImagen" src="../img/narizpayaso.png" alt="NARIZ PAYASO ESPONJA">
+            <h3 class="producto">Nariz de Payaso</h3>
+            <p class="tiendaDescripcion">Nariz de Payaso esponja</p>
+            <p class="tiendaPrecio"> $2500 </p>
+            <button class="botonTienda agregar-carrito">Agregar al carrito</button>
+        </div>
+
+    -->
+
+    <!-- tienda -->
+    <main class="mainTienda">
+        <div class=".containerTienda">
+            <div class="main-items">
+                <h2 class="titulo">PolloTienda</h2>
+                <a class="carrito-main" href="../html/carrito.html">
+                    🛒 <span id="numerito"> 0 </span>
+                </a>
+            </div>
+        </div>
+        <!-- Carrito -->
+        <div class="productos" id="productos">
+            <!--Esto se completa desde JS-->
+        </div>
+        <!-- Carrito -->
+        <section class=".containerTienda">
+            <h2>Carrito</h2>
+            <div class="carrito tienda">
+                <div id="carrito-vacio">
+                    <h3>El chango esta vacio!</h3>
+                </div>
+                <div class="carrito-productos d-none" id="carrito-productos">
+                    <!--Esto se completa desde JS-->
+                </div>
+                <div class="carritoTotal">
+                    <h2>Total: <span id="carrito-total">$0</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=2324589620&text=Hola!,%20pollo%20estoy%20en%20tu%20pagina%20web"
+                    target="_blank" alt="hablame al whatsapp">
+                    <img class="logoWhatsapp" src="../img/whatsapp.png" alt="Logo de whatsapp">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/PolloLopezMagia" target="_blank" rel="noopener"
+                    aria-label="Ir a Facebook">
+                    <i class="bi bi-facebook logoRedes" alt="Ir a Facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/pollomagia/" target="_blank" rel=" noopener"
+                    aria-label="Ir a instagram">
+                    <i class="bi bi-instagram logoRedes" alt="ir a instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@PolloLopez" target="_blank" rel=" noopener" aria-label="Ir a youtube">
+                    <i class="bi bi-youtube logoRedes" alt="ir a youtube"></i>
+                </a>
+            </div>
+            <p>que la magia los acompañe</p>
+            <h3>Pollo Magia - Todos los derechos reservados</h3>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="../js/tienda.js"></script>
+        <script src="../js/main.js"></script>
+</body>
+
+</html>
