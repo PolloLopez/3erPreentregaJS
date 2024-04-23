@@ -75,7 +75,7 @@ function actualizarCarrito() { //es lo mismo que  :const actualizarCarrito = () 
 
             const btnRestar = document.createElement("button");
             btnRestar.classList.add("carrito-producto-btn");
-            btnRestar.innerText = "🔽";
+            btnRestar.innerText = "🔻restar";
             btnRestar.addEventListener("click", () => {
                 restarDelCarrito(producto);
             })
@@ -83,7 +83,7 @@ function actualizarCarrito() { //es lo mismo que  :const actualizarCarrito = () 
 
             const btnSumar = document.createElement("button");
             btnSumar.classList.add("carrito-producto-btn");
-            btnSumar.innerText = "🔼";
+            btnSumar.innerText = "sumar🔺";
             btnSumar.addEventListener("click", () => {
                 sumarDelCarrito(producto);
             })
@@ -91,7 +91,7 @@ function actualizarCarrito() { //es lo mismo que  :const actualizarCarrito = () 
 
             const btnEliminar = document.createElement("button");
             btnEliminar.classList.add("carrito-producto-btn");
-            btnEliminar.innerText = "❌";
+            btnEliminar.innerText = "eliminar❌";
             btnEliminar.addEventListener("click", () => {
                 borrarDelCarrito(producto);
             })
@@ -118,7 +118,7 @@ const agregarAlCarrito = (producto) => {
     Toastify({
         text: "Producto agregado!",
         gravity: "bottom", // top - bottom
-        position: "right", //left - enter - right
+        position: "right", //left - center - right
         duration: 1500
     }).showToast();
 }
@@ -139,7 +139,7 @@ const borrarDelCarrito = (producto) => {
 const restarDelCarrito = (producto) => { // para que no permita restar el primer producto
     if (producto.cantidad !== 1) {
         producto.cantidad--;
-    } else {
+    } else { 
     }
     actualizarCarrito();
     Toastify({
