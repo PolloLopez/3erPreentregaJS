@@ -4,17 +4,21 @@
 // Estilos para el modo claro
 .light-mode {
     background-color: $color-fondo-claro;
-
     h1,
     h2,
     h3,
     h4,
+    h5,
+    h6,
     p {
         color: $color-fuentes-claro;
     }
 
     .encabezado .tituloEncabezado {
         color: $color-fuentes-claro;
+    }
+    .botonDark {
+        color: $color-fondo-claro;
     }
 
 
@@ -23,18 +27,22 @@
 // Estilos modo oscuro
 .dark-mode {
     background-color: $color-fondo-oscuro;
-    $color-texto: rgb(0, 238, 255); // Color oscuro deseado
-
     h1,
     h2,
     h3,
     h4,
+    h5,
+    h6,
     p {
-        color: $color-fuentes-oscuro;
+        color: $color-fondo-claro;
     }
 
     .encabezado .tituloEncabezado {
-        color: $color-fuentes-oscuro;
+        color: $color-fondo-claro;
+    }
+
+    .botonDark {
+        background-color: $color-fondo-claro;
     }
 
 }

@@ -2,7 +2,7 @@
 .botonActual {
     text-decoration: none;
     background-color: $color-fuentes-oscuro;
-    border: 2px solid $color-botones-claro;
+    border: 2px solid $color-fondo-oscuro;
     color: $color-fondo-oscuro;
     padding: 3px;
     border-radius: 1rem;
@@ -10,7 +10,6 @@
     font-size: 2rem;
     margin: 0.5rem;
 }
-
 
 .boton {
     text-decoration: none;
@@ -27,24 +26,6 @@
         border: 2px solid $color-fondo-oscuro;
         background-color: $color-fondo-claro;
         color: $color-fondo-oscuro;
-    }
-}
-
-.botonTienda {
-    text-decoration: none;
-    color: $color-fuentes-claro;
-    background-color: $color-botones-tienda-oscuro;
-    border: 2px solid $color-fuentes-claro;
-    padding: 3px;
-    border-radius: 0.5rem;
-    font-size: 2rem;
-    margin: 0.5rem;
-
-    &:hover {
-        padding: 4px;
-        border: 2px solid $color-fuentes-claro;
-        color: $color-fuentes-oscuro;
-        font-family: Arial, Helvetica, sans-serif;
     }
 }
 
@@ -73,14 +54,12 @@
 .botonDark {
     display: inline-block;
     text-decoration: none;
-    color: $color-fuentes-claro;
-    background-color: $color-tarjetas-oscuro;
+    border: 1px solid $color-fondo-oscuro;
     padding: 3px;
     border-radius: 0.5rem;
     font-weight: 800;
 
     &:hover {
-        color:$color-fuentes-oscuro;
-        background-color: $color-tarjetas-claro;
+
     }
 }

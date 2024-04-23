@@ -1,10 +1,3 @@
-.bodyTienda {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-}
-
 .containerTienda {
     max-width: 1000px;
     margin: 0 auto;
@@ -43,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-
 .header {
     background-color: var(--clr-black);
     color: var(--clr-white);
@@ -73,53 +65,45 @@ h1, h2, h3, h4, h5, h6 {
 .productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 3rem;
+    gap: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
 .producto {
-    background-color: var(--clr-black);
+    margin-top: .1rem;
+    background-color:$color-tarjetas-claro;
     padding: .5rem;
     border-radius: 1rem;
-    color: var(--clr-white);
+    color: $color-fuentes-claro;
     display: flex;
     flex-direction: column;
     gap: .25rem;
+    justify-content: end;
+    align-items: center;
 }
 
 .producto-img {
     border-radius: .75rem;
-    width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    background-color: white;
-    object-position: top left;
-    transition: 1s;
-}
-
-.producto-img:hover {
-    object-position: bottom right;
+    width: auto;
+    height: 5rem;
 }
 
 .producto-btn {
-    border-radius: .75rem;
-    border: 0;
-    background-color: var(--clr-accent);
-    color: var(--clr-white);
-    padding: .5rem;
-    margin-top: .5rem;
-    cursor: pointer;
-    border: 2px solid var(--clr-accent);
-    transition: .2s;
-}
+    text-decoration: none;
+    color: $color-fuentes-claro;
+    background-color: $color-fuentes-oscuro;
+    border: 2px solid $color-fuentes-oscuro;
+    padding: 1px;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    margin: 0.5rem;
 
-.producto-btn:hover {
-    background-color: var(--clr-white);
-    color: var(--clr-black);
-    font-weight: 600;
-    letter-spacing: 1px;
+    &:hover {
+        border: 2px solid $color-fuentes-claro;
+        color: $color-fuentes-claro;
+        letter-spacing: 0.5px;
+    }
 }
-
 .carrito-productos {
     display: flex;
     flex-direction: column;
@@ -128,19 +112,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .carrito-producto {
     display: flex;
-    gap: 1rem;
     align-items: center;
-    justify-content: space-between;
-    background-color: var(--clr-black);
-    padding: .5rem 1rem;
+    background-color: $color-fuentes-oscuro;
     border-radius: 1rem;
-    color: var(--clr-white);
+    width: auto;
 }
 
 .carrito-producto-btn {
-    background-color: var(--clr-white);
-    border: 0;
-    padding: .25rem;
+    background-color: $color-tarjetas-claro;
+    padding: 0.5rem;
+    border: 1px solid $color-fuentes-claro;
     border-radius: .25rem;
     cursor: pointer;
 }
@@ -158,12 +139,8 @@ h1, h2, h3, h4, h5, h6 {
 .no-hay-productos {
     color: red;
 }
+
 /*
-
-.mainTienda {
-    padding-block: 2rem;
-}
-
 #formulario-compra {
     margin-top: 20px;
     margin-bottom: 20px;

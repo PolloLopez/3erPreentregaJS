@@ -2,17 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&family=Sen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
 .light-mode {
-  background-color: #fcfcfd;
+  background-color: #fafafa;
 }
 .light-mode h1,
 .light-mode h2,
 .light-mode h3,
 .light-mode h4,
+.light-mode h5,
+.light-mode h6,
 .light-mode p {
   color: #241670;
 }
 .light-mode .encabezado .tituloEncabezado {
   color: #241670;
+}
+.light-mode .botonDark {
+  color: #fafafa;
 }
 
 .dark-mode {
@@ -22,18 +27,23 @@
 .dark-mode h2,
 .dark-mode h3,
 .dark-mode h4,
+.dark-mode h5,
+.dark-mode h6,
 .dark-mode p {
-  color: #fcfcfd;
+  color: #fafafa;
 }
 .dark-mode .encabezado .tituloEncabezado {
-  color: #fcfcfd;
+  color: #fafafa;
+}
+.dark-mode .botonDark {
+  background-color: #fafafa;
 }
 
 /* BOTONES !*/
 .botonActual {
   text-decoration: none;
-  background-color: #fcfcfd;
-  border: 2px solid rgba(67, 3, 104, 0.5882352941);
+  background-color: rgba(216, 216, 218, 0.3568627451);
+  border: 2px solid #241670;
   color: #241670;
   padding: 3px;
   border-radius: 1rem;
@@ -44,9 +54,9 @@
 
 .boton {
   text-decoration: none;
-  color: #fcfcfd;
+  color: #fafafa;
   background-color: #241670;
-  border: 2px solid #fcfcfd;
+  border: 2px solid #fafafa;
   padding: 3px;
   border-radius: 1rem;
   font-size: 2rem;
@@ -54,29 +64,12 @@
 }
 .boton:hover {
   border: 2px solid #241670;
-  background-color: #fcfcfd;
+  background-color: #fafafa;
   color: #241670;
-}
-
-.botonTienda {
-  text-decoration: none;
-  color: #241670;
-  background-color: rgba(99, 83, 238, 0.5411764706);
-  border: 2px solid #241670;
-  padding: 3px;
-  border-radius: 0.5rem;
-  font-size: 2rem;
-  margin: 0.5rem;
-}
-.botonTienda:hover {
-  padding: 4px;
-  border: 2px solid #241670;
-  color: #fcfcfd;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .form-control {
-  background-color: #fcfcfd;
+  background-color: #fafafa;
   border: 2px solid #241670;
 }
 
@@ -86,7 +79,7 @@
   left: 50%;
   transform: translate(-50%);
   padding: 10px 20px;
-  background-color: #fcfcfd;
+  background-color: rgba(216, 216, 218, 0.3568627451);
   color: #241670;
   border: none;
   border-radius: 5px;
@@ -100,17 +93,11 @@
 .botonDark {
   display: inline-block;
   text-decoration: none;
-  color: #241670;
-  background-color: rgba(247, 39, 2, 0.7411764706);
+  border: 1px solid #241670;
   padding: 3px;
   border-radius: 0.5rem;
   font-weight: 800;
 }
-.botonDark:hover {
-  color: #fcfcfd;
-  background-color: rgba(109, 154, 250, 0.8274509804);
-}
-
 .imgLogo {
   height: 7.5rem;
   transition: transform 2.5s;
@@ -139,14 +126,14 @@ footer {
 
 h3 {
   text-align: center;
-  color: #fcfcfd;
+  color: rgba(216, 216, 218, 0.3568627451);
   text-transform: uppercase;
   font-size: 2rem;
 }
 
 footer p {
   font-weight: 900;
-  color: #fcfcfd;
+  color: rgba(216, 216, 218, 0.3568627451);
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -205,7 +192,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "roboto", sans-serif;
-  background-color: #fcfcfd;
+  background-color: #fafafa;
   background: none;
 }
 
@@ -278,13 +265,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 10px;
 }
 
-.bodyTienda {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
 .containerTienda {
   max-width: 1000px;
   margin: 0 auto;
@@ -353,51 +333,43 @@ h1, h2, h3, h4, h5, h6 {
 .productos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 3rem;
+  gap: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
 .producto {
-  background-color: var(--clr-black);
+  margin-top: 0.1rem;
+  background-color: rgba(109, 154, 250, 0.8274509804);
   padding: 0.5rem;
   border-radius: 1rem;
-  color: var(--clr-white);
+  color: #241670;
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  justify-content: end;
+  align-items: center;
 }
 
 .producto-img {
   border-radius: 0.75rem;
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  background-color: white;
-  object-position: top left;
-  transition: 1s;
-}
-
-.producto-img:hover {
-  object-position: bottom right;
+  width: auto;
+  height: 5rem;
 }
 
 .producto-btn {
-  border-radius: 0.75rem;
-  border: 0;
-  background-color: var(--clr-accent);
-  color: var(--clr-white);
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  cursor: pointer;
-  border: 2px solid var(--clr-accent);
-  transition: 0.2s;
+  text-decoration: none;
+  color: #241670;
+  background-color: rgba(216, 216, 218, 0.3568627451);
+  border: 2px solid rgba(216, 216, 218, 0.3568627451);
+  padding: 1px;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  margin: 0.5rem;
 }
-
 .producto-btn:hover {
-  background-color: var(--clr-white);
-  color: var(--clr-black);
-  font-weight: 600;
-  letter-spacing: 1px;
+  border: 2px solid #241670;
+  color: #241670;
+  letter-spacing: 0.5px;
 }
 
 .carrito-productos {
@@ -408,19 +380,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .carrito-producto {
   display: flex;
-  gap: 1rem;
   align-items: center;
-  justify-content: space-between;
-  background-color: var(--clr-black);
-  padding: 0.5rem 1rem;
+  background-color: rgba(216, 216, 218, 0.3568627451);
   border-radius: 1rem;
-  color: var(--clr-white);
+  width: auto;
 }
 
 .carrito-producto-btn {
-  background-color: var(--clr-white);
-  border: 0;
-  padding: 0.25rem;
+  background-color: rgba(109, 154, 250, 0.8274509804);
+  padding: 0.5rem;
+  border: 1px solid #241670;
   border-radius: 0.25rem;
   cursor: pointer;
 }
@@ -440,11 +409,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*
-
-.mainTienda {
-    padding-block: 2rem;
-}
-
 #formulario-compra {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -486,14 +450,15 @@ h1, h2, h3, h4, h5, h6 {
 .encabezado {
   display: flex;
   height: 8rem;
-  padding-block: 1rem;
+  padding: 1rem 0;
   justify-content: space-between;
   align-items: center;
 }
 
 h1 {
+  margin: auto;
   display: inline-block;
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #241670;
 }
