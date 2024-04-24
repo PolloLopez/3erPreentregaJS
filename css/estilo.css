@@ -1,25 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&family=Sen&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
-.light-mode {
-  background-color: #fafafa;
-}
-.light-mode h1,
-.light-mode h2,
-.light-mode h3,
-.light-mode h4,
-.light-mode h5,
-.light-mode h6,
-.light-mode p {
-  color: #241670;
-}
-.light-mode .encabezado .tituloEncabezado {
-  color: #241670;
-}
-.light-mode .botonDark {
-  color: #fafafa;
-}
-
 .dark-mode {
   background-color: #241670;
 }
@@ -30,13 +10,10 @@
 .dark-mode h5,
 .dark-mode h6,
 .dark-mode p {
-  color: #fafafa;
+  color: rgba(216, 216, 218, 0.3568627451);
 }
 .dark-mode .encabezado .tituloEncabezado {
-  color: #fafafa;
-}
-.dark-mode .botonDark {
-  background-color: #fafafa;
+  color: rgba(216, 216, 218, 0.3568627451);
 }
 
 /* BOTONES !*/
@@ -90,15 +67,20 @@
   position: relative;
 }
 
-.botonDark {
-  display: inline-block;
-  text-decoration: none;
-  border: 1px solid #241670;
-  padding: 3px;
-  border-radius: 0.5rem;
-  font-weight: 800;
+/*  
+.btnDarkEstilo {
+    text-decoration: none;
+    color: $color-fondo-oscuro; 
+    background-color: $color-fuentes-claro;
+    border: 2px solid $color-fondo-claro;
 }
 
+.btnDarkEstilo:hover {
+    border: 2px solid $color-fondo-oscuro; 
+    background-color: $color-fondo-claro; 
+    color: $color-fondo-oscuro; 
+}
+*/
 .imgLogo {
   height: 7.5rem;
   transition: transform 2.5s;

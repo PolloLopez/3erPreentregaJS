@@ -20,7 +20,7 @@
     border-radius: 1rem;
     font-size: 2rem;
     margin: 0.5rem;
-    
+
 
     &:hover {
         border: 2px solid $color-fondo-oscuro;
@@ -51,11 +51,18 @@
     position: relative;
 }
 
-.botonDark {
-    display: inline-block;
+//Esto no me estaria funcionando
+/*  
+.btnDarkEstilo {
     text-decoration: none;
-    border: 1px solid $color-fondo-oscuro;
-    padding: 3px;
-    border-radius: 0.5rem;
-    font-weight: 800;
+    color: $color-fondo-oscuro; 
+    background-color: $color-fuentes-claro;
+    border: 2px solid $color-fondo-claro;
 }
+
+.btnDarkEstilo:hover {
+    border: 2px solid $color-fondo-oscuro; 
+    background-color: $color-fondo-claro; 
+    color: $color-fondo-oscuro; 
+}
+*/

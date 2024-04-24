@@ -1,32 +1,9 @@
 // dark-mode
 @import "variables";
 
-// Estilos para el modo claro
-.light-mode {
-    background-color: $color-fondo-claro;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-        color: $color-fuentes-claro;
-    }
-
-    .encabezado .tituloEncabezado {
-        color: $color-fuentes-claro;
-    }
-    .botonDark {
-        color: $color-fondo-claro;
-    }
-
-
-}
-
-// Estilos modo oscuro
 .dark-mode {
     background-color: $color-fondo-oscuro;
+
     h1,
     h2,
     h3,
@@ -34,16 +11,10 @@
     h5,
     h6,
     p {
-        color: $color-fondo-claro;
+        color: $color-fuentes-oscuro;
     }
 
     .encabezado .tituloEncabezado {
-        color: $color-fondo-claro;
+        color: $color-fuentes-oscuro;
     }
-
-    .botonDark {
-        background-color: $color-fondo-claro;
-    }
-
 }
-

@@ -29,9 +29,9 @@ if (darkMode === "activado") {
 function actualizarTextoModo() {
     const botonColorMode = document.getElementById("color-mode");
     if (body.classList.contains("dark-mode")) {
-        botonColorMode.textContent = "Claro";
+        botonColorMode.textContent = "Cambiar a modo claro";
     } else {
-        botonColorMode.textContent = "Oscuro";
+        botonColorMode.textContent = "Cambiar a modo oscuro";
     }
 }
 
@@ -43,4 +43,3 @@ botonColorMode.addEventListener("click", () => {
         activarDarkMode();
     }
 });
-

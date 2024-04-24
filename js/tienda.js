@@ -131,7 +131,7 @@ const borrarDelCarrito = (producto) => {
     Toastify({
         text: "Producto ELIMINADO!",
         gravity: "bottom",
-        position: "right", 
+        position: "right",
         duration: 1800
     }).showToast();
 }
@@ -139,13 +139,13 @@ const borrarDelCarrito = (producto) => {
 const restarDelCarrito = (producto) => { // para que no permita restar el primer producto
     if (producto.cantidad !== 1) {
         producto.cantidad--;
-    } else { 
+    } else {
     }
     actualizarCarrito();
     Toastify({
         text: "Quitaste 1 producto.",
         gravity: "bottom",
-        position: "right", 
+        position: "right",
         duration: 1500
     }).showToast();
 }
@@ -157,7 +157,7 @@ const sumarDelCarrito = (producto) => {
     Toastify({
         text: "Agregaste 1 producto.",
         gravity: "bottom",
-        position: "right", 
+        position: "right",
         duration: 1500
     }).showToast();
 }
