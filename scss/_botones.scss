@@ -29,6 +29,18 @@
     }
 }
 
+.btnDarkEstilo {
+    text-decoration: none;
+    color: $color-fondo-claro; 
+    background-color: $color-fuentes-claro;
+    border: 2px solid $color-fondo-claro;
+}
+
+.btnDarkEstilo:hover {
+    border: 2px solid $color-fuentes-claro; 
+    background-color: $color-fondo-claro; 
+    color: $color-fuentes-claro; 
+}
 .form-control {
     background-color: $color-fondo-claro;
     border: 2px solid $color-fuentes-claro;
@@ -36,33 +48,26 @@
 
 .botonLeer {
     position: absolute;
-    bottom: 20px;
+    bottom: 120px;
     left: 50%;
     transform: translate(-50%);
     padding: 10px 20px;
-    background-color: $color-fuentes-oscuro;
-    color: $color-fuentes-claro;
+    background-color: $color-fuentes-claro;
+    color: $color-fondo-claro;
+    font-size: 1.3rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+
+    &:hover{
+        background-color: $color-fondo-claro;
+        color: $color-fuentes-claro;
+        border: 2px solid $color-fuentes-claro;
+    }
 }
 
 .siguienteHero {
     position: relative;
 }
 
-//Esto no me estaria funcionando
-/*  
-.btnDarkEstilo {
-    text-decoration: none;
-    color: $color-fondo-oscuro; 
-    background-color: $color-fuentes-claro;
-    border: 2px solid $color-fondo-claro;
-}
 
-.btnDarkEstilo:hover {
-    border: 2px solid $color-fondo-oscuro; 
-    background-color: $color-fondo-claro; 
-    color: $color-fondo-oscuro; 
-}
-*/

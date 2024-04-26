@@ -8,7 +8,7 @@
 }
 
 h2 {
-  margin-bottom: 0.5rem; 
+  margin-bottom: 0.5rem;
   font-size: 3rem;
   font-weight: 400;
   color: $color-fuentes-claro;
@@ -21,8 +21,13 @@ p {
   font-size: 1.8rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Arial, Helvetica, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: roboto, Arial, Helvetica, sans-serif;
 }
 
 .hero h2 span {
@@ -31,25 +36,9 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-
-
 .containerHero {
   display: flex;
   margin-top: 0;
-}
-
-
-.botonLeer {
-  position: absolute;
-  bottom: 3rem; 
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 20px;
-  background-color: $color-botones-claro;
-  color: $color-fuentes-claro;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .circoDescripcion {

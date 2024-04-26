@@ -31,9 +31,9 @@
 
 .boton {
   text-decoration: none;
-  color: #fafafa;
+  color: #fefefe;
   background-color: #241670;
-  border: 2px solid #fafafa;
+  border: 2px solid #fefefe;
   padding: 3px;
   border-radius: 1rem;
   font-size: 2rem;
@@ -41,46 +41,51 @@
 }
 .boton:hover {
   border: 2px solid #241670;
-  background-color: #fafafa;
+  background-color: #fefefe;
+  color: #241670;
+}
+
+.btnDarkEstilo {
+  text-decoration: none;
+  color: #fefefe;
+  background-color: #241670;
+  border: 2px solid #fefefe;
+}
+
+.btnDarkEstilo:hover {
+  border: 2px solid #241670;
+  background-color: #fefefe;
   color: #241670;
 }
 
 .form-control {
-  background-color: #fafafa;
+  background-color: #fefefe;
   border: 2px solid #241670;
 }
 
 .botonLeer {
   position: absolute;
-  bottom: 20px;
+  bottom: 120px;
   left: 50%;
   transform: translate(-50%);
   padding: 10px 20px;
-  background-color: rgba(216, 216, 218, 0.3568627451);
-  color: #241670;
+  background-color: #241670;
+  color: #fefefe;
+  font-size: 1.3rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+.botonLeer:hover {
+  background-color: #fefefe;
+  color: #241670;
+  border: 2px solid #241670;
 }
 
 .siguienteHero {
   position: relative;
 }
 
-/*  
-.btnDarkEstilo {
-    text-decoration: none;
-    color: $color-fondo-oscuro; 
-    background-color: $color-fuentes-claro;
-    border: 2px solid $color-fondo-claro;
-}
-
-.btnDarkEstilo:hover {
-    border: 2px solid $color-fondo-oscuro; 
-    background-color: $color-fondo-claro; 
-    color: $color-fondo-oscuro; 
-}
-*/
 .imgLogo {
   height: 7.5rem;
   transition: transform 2.5s;
@@ -116,7 +121,7 @@ h3 {
 
 footer p {
   font-weight: 900;
-  color: rgba(216, 216, 218, 0.3568627451);
+  color: red;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -175,7 +180,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "roboto", sans-serif;
-  background-color: #fafafa;
+  background-color: #fefefe;
   background: none;
 }
 
@@ -201,8 +206,13 @@ p {
   font-size: 1.8rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: Arial, Helvetica, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: roboto, Arial, Helvetica, sans-serif;
 }
 
 .hero h2 span {
@@ -214,19 +224,6 @@ h1, h2, h3, h4, h5, h6 {
 .containerHero {
   display: flex;
   margin-top: 0;
-}
-
-.botonLeer {
-  position: absolute;
-  bottom: 3rem;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px 20px;
-  background-color: rgba(67, 3, 104, 0.5882352941);
-  color: #241670;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 .circoDescripcion {
@@ -288,8 +285,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-  background-color: var(--clr-black);
-  color: var(--clr-white);
+  background-color: yellow;
+  color: aquamarine;
   padding-block: 1rem;
 }
 
@@ -301,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .carrito-header {
   font-size: 2rem;
-  color: var(--clr-white);
+  color: aqua;
   text-decoration: none;
 }
 
@@ -394,8 +391,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
-  background-color: var(--clr-black);
-  color: var(--clr-white);
+  background-color: yellowgreen;
+  color: rebeccapurple;
   padding-block: 2rem;
 }
 
