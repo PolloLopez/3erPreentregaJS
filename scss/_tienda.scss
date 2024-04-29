@@ -37,8 +37,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header {
-    background-color: yellow;
-    color:aquamarine;
     padding-block: 1rem;
 }
 
@@ -48,18 +46,28 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
 }
 
-.carrito-header {
-    font-size: 2rem;
-    color: aqua;
-    text-decoration: none;
+.mainTienda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinea el contenido a la parte inferior */
+    align-items: flex-end; /* Alinea el contenido a la derecha */
+    padding-block: 2rem;
+    margin: auto;
 }
 
-.mainTienda {
-    padding-block: 2rem;
-}
 
 .titulo {
     margin-bottom: 1rem;
+}
+
+.carrito-main {
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+#numerito {
+    font-size: 1.2em; 
+    font-weight: 600; 
 }
 
 .productos {
@@ -92,15 +100,14 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     color: $color-fuentes-claro;
     background-color: $color-fuentes-oscuro;
-    border: 2px solid $color-fuentes-oscuro;
-    padding: 1px;
+    border: 2px solid $color-fondo-oscuro;
+    padding: 3px;
     border-radius: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 0.5rem;
 
     &:hover {
         border: 2px solid $color-fuentes-claro;
-        color: $color-fuentes-claro;
         letter-spacing: 0.5px;
     }
 }
@@ -108,21 +115,34 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    height: auto;
+    justify-content: end;
+    padding-block: end;
 }
+
 
 .carrito-producto {
     display: flex;
-    align-items: center;
-    background-color: $color-fuentes-oscuro;
+    justify-content: initial;/*horizontal*/
+    align-items: center;/*vertical*/
     border-radius: 1rem;
+    border: 2px solid;
+    margin: auto;
+    height: 6rem;
 }
 
 .carrito-producto-btn {
     background-color: $color-tarjetas-claro;
     padding: 0.5rem;
     border: 1px solid $color-fuentes-claro;
+    margin-right: 4px;
     border-radius: .25rem;
     cursor: pointer;
+
+    &:hover {
+        background-color: $color-fondo-claro;
+        color: $color-negro;
+    }
 
 }
 #finalizarCompra {
@@ -136,6 +156,7 @@ h1, h2, h3, h4, h5, h6 {
         border: 2px solid $color-fuentes-claro;
         color: $color-fuentes-claro;
         letter-spacing: 2px;
+        
     }
 }
 
@@ -145,51 +166,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
-    background-color: yellowgreen   ;
-    color: rebeccapurple;
     padding-block: 2rem;
 }
 
 .no-hay-productos {
-    color: red;
+    color: $color-rojo-redes;
 }
-
-/*
-#formulario-compra {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#formulario-compra .campo-formulario {
-    margin-bottom: 15px;
-}
-
-#formulario-compra label {
-    display: block;
-}/* Para que cada etiqueta se muestre en una línea separada */
-
-/*
-#formulario-compra .campo-formulario {
-    display: flex;
-    flex-direction: column;
-}
-
-#formulario-compra button {
-    background-color: $color-tarjetas-claro;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#formulario-compra button:hover {
-    background-color: darken($color-tarjetas-claro, 10%);
-}
-
-#formulario-compra .campo-error {
-    border: 1px solid red;
-}// Cambia el borde del campo a rojo en caso de error 
-
-*/

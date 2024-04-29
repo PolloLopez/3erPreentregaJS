@@ -1,7 +1,7 @@
 /* BOTONES !*/
 .botonActual {
     text-decoration: none;
-    background-color: $color-fuentes-oscuro;
+    background-color: $color-fondo-claro;
     border: 2px solid $color-fondo-oscuro;
     color: $color-fondo-oscuro;
     padding: 3px;
@@ -15,7 +15,6 @@
     text-decoration: none;
     color: $color-fondo-claro;
     background-color: $color-fondo-oscuro;
-    border: 2px solid $color-fondo-claro;
     padding: 3px;
     border-radius: 1rem;
     font-size: 2rem;
@@ -29,18 +28,25 @@
     }
 }
 
-.btnDarkEstilo {
-    text-decoration: none;
-    color: $color-fondo-claro; 
-    background-color: $color-fuentes-claro;
-    border: 2px solid $color-fondo-claro;
+.botonDark {
+    margin-top: 0.7rem; /* margen al h1 de cada pagina */
 }
 
-.btnDarkEstilo:hover {
-    border: 2px solid $color-fuentes-claro; 
-    background-color: $color-fondo-claro; 
-    color: $color-fuentes-claro; 
+.botonDarkEstilo {
+    text-decoration: none;
+    color: $color-fondo-claro;
+    background-color: $color-negro;
+    border: 2px solid $color-fondo-claro;
+
+    &:hover {
+        border: 2px solid $color-negro;
+        background-color: $color-fondo-claro;
+        color: $color-fuentes-claro;
+    }
 }
+
+
+
 .form-control {
     background-color: $color-fondo-claro;
     border: 2px solid $color-fuentes-claro;
@@ -59,7 +65,7 @@
     border-radius: 5px;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         background-color: $color-fondo-claro;
         color: $color-fuentes-claro;
         border: 2px solid $color-fuentes-claro;
@@ -69,5 +75,3 @@
 .siguienteHero {
     position: relative;
 }
-
-

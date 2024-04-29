@@ -3,7 +3,6 @@
 
 .dark-mode {
     background-color: $color-fondo-oscuro;
-
     h1,
     h2,
     h3,
@@ -11,10 +10,6 @@
     h5,
     h6,
     p {
-        color: $color-fuentes-oscuro;
-    }
-
-    .encabezado .tituloEncabezado {
-        color: $color-fuentes-oscuro;
+        color: $color-fondo-claro;
     }
 }
