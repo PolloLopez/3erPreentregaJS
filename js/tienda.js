@@ -1,26 +1,16 @@
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-const productos = [ /* esta const simula ser la base de datos*/
-    {
-        titulo: "Peluca Payaso",
-        precio: 1000,
-        descripcion: "Peluca de lycra colores varios",
-        img: "../img/peluca.png",
-    },
-    {
-        titulo: "Clavas K8",
-        precio: 2000,
-        descripcion: "Reforzadas, de teflon",
-        img: "../img/clavas.png",
-    },
-    {
-        titulo: "Monociclo",
-        precio: 3000,
-        descripcion: "rodado 24 - masa Shimano",
-        img: "../img/monociclo.png",
-    }
-];
+let productos = [];
+
+/*traer de base de datos local */
+fetch("/data/productos.json")
+    .then(res => res.json())
+    .then(data => {
+        productos = data;
+        mostrarProductos(data);
+    })
+
 
 const contenedorProductos = document.querySelector("#productos");
 const carritoVacio = document.querySelector("#carrito-vacio");
@@ -31,27 +21,29 @@ const numeritoTotal = document.querySelector("#numerito");
 
 
 //recorre el array y lo muestra
-productos.forEach((producto) => {
-    const div = document.createElement("div");
-    div.classList.add("producto");
-    div.innerHTML = `
-    <img class="tiendaImagen" src="${producto.img}" alt="${producto.titulo}">
-    <h3 class="producto"${producto.titulo}</h3>
-    <p>${producto.descripcion}</p>
-    <p>$${producto.precio}</p>
-    <button class="producto-btn">Agregar al carrito</button>
-    `; //  AGREGUE EL BUTTON
+const mostrarProductos = (productos) => {
+    productos.forEach((producto) => {
+        const div = document.createElement("div");
+        div.classList.add("producto");
+        div.innerHTML = `
+        <img class="tiendaImagen" src="${producto.img}" alt="${producto.titulo}">
+        <h3 class="producto">${producto.titulo}</h3>
+        <p>${producto.descripcion}</p>
+        <p>$${producto.precio}</p>
+        `;
 
-    
+        const btn = document.createElement("button"); //se crea el boton
+        btn.classList.add("producto-btn");
+        btn.innerText = "Agregar al carrito";
+        btn.addEventListener("click", () => {
+            agregarAlCarrito(producto);
+        });
+        div.append(btn);
 
-const btn = div.querySelector(".producto-btn");
-btn.addEventListener("click", () => {
-    agregarAlCarrito(producto);
-});
+        contenedorProductos.append(div);
+    });
 
-contenedorProductos.append(div);
-});
-
+}
 
 const botonesAgregar = document.querySelectorAll(".producto-btn");
 botonesAgregar.forEach((boton) => {
@@ -122,7 +114,7 @@ const agregarAlCarrito = (producto) => {
     if (itemEncontrado) {
         itemEncontrado.cantidad++;
     } else {
-        carrito.push({ ...producto, cantidad: 1});
+        carrito.push({ ...producto, cantidad: 1 });
     }
     actualizarCarrito();
 

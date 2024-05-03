@@ -1,0 +1,38 @@
+[ 
+    {
+        "titulo": "Peluca Payaso",
+        "precio": 1000,
+        "descripcion": "Peluca de lycra colores varios",
+        "img": "../img/peluca.png"
+    },
+    {
+        "titulo": "Clavas K8",
+        "precio": 2000,
+        "descripcion": "Reforzadas, de teflon",
+        "img": "../img/clavas.png"
+    },
+    {
+        "titulo": "Chalupas",
+        "precio": 3000,
+        "descripcion": "%100 Artesanales",
+        "img": "../img/chalupa.png"
+    },
+    {
+        "titulo": "Hula",
+        "precio": 2500,
+        "descripcion": "Teflon Reforzado",
+        "img": "../img/hula.png"
+    },
+    {
+        "titulo": "Nariz Payaso",
+        "precio": 1200,
+        "descripcion": "Espuma",
+        "img": "../img/narizpayaso.png"
+    },
+    {
+        "titulo": "",
+        "precio": 3000,
+        "descripcion": "rodado 24 - masa Shimano",
+        "img": "../img/monociclo.png"
+    }
+]
