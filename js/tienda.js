@@ -24,10 +24,11 @@ const productos = [ /* esta const simula ser la base de datos*/
 
 const contenedorProductos = document.querySelector("#productos");
 const carritoVacio = document.querySelector("#carrito-vacio");
-//const carritoComprado = document.querySelector("#carritoComprado");
 const carritoProductos = document.querySelector("#carrito-productos");
 const carritoTotal = document.querySelector("#carrito-total");
+const btnVaciar = document.querySelector("#vaciar");
 const numeritoTotal = document.querySelector("#numerito");
+
 
 //recorre el array y lo muestra
 productos.forEach((producto) => {
@@ -38,29 +39,39 @@ productos.forEach((producto) => {
     <h3 class="producto"${producto.titulo}</h3>
     <p>${producto.descripcion}</p>
     <p>$${producto.precio}</p>
-    `;
+    <button class="producto-btn">Agregar al carrito</button>
+    `; //  AGREGUE EL BUTTON
 
-    const btn = document.createElement("button"); //crea btn 
-    btn.classList.add("producto-btn");
-    btn.innerText = "Agregar al carrito";
+    
 
-    btn.addEventListener("click", () => {
-        agregarAlCarrito(producto);
-    })
+const btn = div.querySelector(".producto-btn");
+btn.addEventListener("click", () => {
+    agregarAlCarrito(producto);
+});
 
-    div.append(btn);
-    contenedorProductos.append(div);
-})
+contenedorProductos.append(div);
+});
+
+
+const botonesAgregar = document.querySelectorAll(".producto-btn");
+botonesAgregar.forEach((boton) => {
+    boton.addEventListener("click", (e) => {
+        const id = e.target.id;
+        const productoAsignado = productos.find(prod => prod.id === id);
+        agregarAlCarrito(productoAsignado);
+    });
+});
 
 // Funcion para actualizar el carrito
 function actualizarCarrito() { //es lo mismo que  :const actualizarCarrito = () => {
-    console.log(carrito);
     if (carrito.length === 0) {
         carritoVacio.classList.remove("d-none");
         carritoProductos.classList.add("d-none");
+        btnVaciar.classList.add("d-none");/*si el carrito esta vacio(length ===0 add clase d-none*/
     } else {
         carritoVacio.classList.add("d-none");
         carritoProductos.classList.remove("d-none");
+        btnVaciar.classList.remove("d-none");/*si no esta vacio, remover la clase d-none dejandolo disponible para vaciar*/
 
         carritoProductos.innerHTML = "";
         carrito.forEach(producto => {//agregamos los divs
@@ -111,7 +122,7 @@ const agregarAlCarrito = (producto) => {
     if (itemEncontrado) {
         itemEncontrado.cantidad++;
     } else {
-        carrito.push({ ...producto, cantidad: 1 });
+        carrito.push({ ...producto, cantidad: 1});
     }
     actualizarCarrito();
 
@@ -172,7 +183,12 @@ const calcularNumerito = () => {
     return numeritoTotal;
 }
 
-actualizarCarrito(); // va al final para que se actualice con el total de carrito
+btnVaciar.addEventListener("click", () => {
+    carrito.length = 0;
+    actualizarCarrito();
+});
+
+actualizarCarrito();; // va al final para que se actualice con el total de carrito
 
 
 
