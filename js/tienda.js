@@ -11,14 +11,12 @@ fetch("/data/productos.json")
         mostrarProductos(data);
     })
 
-
 const contenedorProductos = document.querySelector("#productos");
 const carritoVacio = document.querySelector("#carrito-vacio");
 const carritoProductos = document.querySelector("#carrito-productos");
 const carritoTotal = document.querySelector("#carrito-total");
 const btnVaciar = document.querySelector("#vaciar");
 const numeritoTotal = document.querySelector("#numerito");
-
 
 //recorre el array y lo muestra
 const mostrarProductos = (productos) => {
@@ -109,10 +107,12 @@ function actualizarCarrito() { //es lo mismo que  :const actualizarCarrito = () 
 
 // se llama para que agregue al carrito
 // el if-else chequea si hay producto, suma una con ++ si no, no sube nada
+//clase 13 
 const agregarAlCarrito = (producto) => {
     const itemEncontrado = carrito.find(item => item.titulo === producto.titulo);
     if (itemEncontrado) {
         itemEncontrado.cantidad++;
+      //  carrito.push({ ...producto, cantidad: 1 }); // Almacenar subtotal                     carrito.push({ ...producto, cantidad: 1, subtotal: producto.precio }); 
     } else {
         carrito.push({ ...producto, cantidad: 1 });
     }
@@ -122,7 +122,7 @@ const agregarAlCarrito = (producto) => {
         text: "Producto agregado!",
         gravity: "bottom", // top - bottom
         position: "right", //left - center - right
-        duration: 1500
+        duration: 1000
     }).showToast();
 }
 
@@ -135,7 +135,7 @@ const borrarDelCarrito = (producto) => {
         text: "Producto ELIMINADO!",
         gravity: "bottom",
         position: "right",
-        duration: 1800
+        duration: 1000
     }).showToast();
 }
 
@@ -149,7 +149,7 @@ const restarDelCarrito = (producto) => { // para que no permita restar el primer
         text: "Quitaste 1 producto.",
         gravity: "bottom",
         position: "right",
-        duration: 1500
+        duration: 1000
     }).showToast();
 }
 
@@ -161,7 +161,7 @@ const sumarDelCarrito = (producto) => {
         text: "Agregaste 1 producto.",
         gravity: "bottom",
         position: "right",
-        duration: 1500
+        duration: 1000
     }).showToast();
 }
 
@@ -181,12 +181,3 @@ btnVaciar.addEventListener("click", () => {
 });
 
 actualizarCarrito();; // va al final para que se actualice con el total de carrito
-
-
-
-
-
-
-
-
-

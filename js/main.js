@@ -1,12 +1,12 @@
-// Funcion "leer mas" -- INDEX
 function toggleTexto() {
-    var textoAdicional = document.getElementById("texto-adicional");
-    textoAdicional.classList.toggle("oculto");
-}
+    const textoCompleto = document.getElementById("textoCompleto");
+    const botonLeer = document.querySelector(".botonLeer");
 
-/*
-// Agregar un evento de escucha para el botón "Finalizar Compra"
-document.getElementById('btn-finalizar-compra').addEventListener('click', function () {
-    mostrarFormulario();
-});
-*/
+    if (textoCompleto.classList.contains("textoCompleto")) {
+        textoCompleto.classList.remove("textoCompleto");
+        botonLeer.textContent = "Leer menos";
+    } else {
+        textoCompleto.classList.add("textoCompleto");
+        botonLeer.textContent = "Leer mas";
+    }
+}

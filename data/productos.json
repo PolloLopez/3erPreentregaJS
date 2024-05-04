@@ -1,4 +1,4 @@
-[ 
+[
     {
         "titulo": "Peluca Payaso",
         "precio": 1000,
@@ -30,7 +30,7 @@
         "img": "../img/narizpayaso.png"
     },
     {
-        "titulo": "",
+        "titulo": "Monociclo",
         "precio": 3000,
         "descripcion": "rodado 24 - masa Shimano",
         "img": "../img/monociclo.png"

@@ -20,7 +20,6 @@
     font-size: 2rem;
     margin: 0.5rem;
 
-
     &:hover {
         border: 2px solid $color-fondo-oscuro;
         background-color: $color-fondo-claro;
@@ -29,7 +28,8 @@
 }
 
 .botonDark {
-    margin-top: 0.7rem; /* margen al h1 de cada pagina */
+    margin-top: 0.7rem;
+    /* margen al h1 de cada pagina */
 }
 
 .botonDarkEstilo {
@@ -45,33 +45,50 @@
     }
 }
 
-
-
 .form-control {
     background-color: $color-fondo-claro;
     border: 2px solid $color-fuentes-claro;
 }
 
 .botonLeer {
-    position: absolute;
-    bottom: 120px;
-    left: 50%;
-    transform: translate(-50%);
-    padding: 10px 20px;
-    background-color: $color-fuentes-claro;
+    padding: 1rem 2.5rem;
     color: $color-fondo-claro;
     font-size: 1.3rem;
-    border: none;
+    background-color: $color-fuentes-claro;
+    border: 1px solid $color-fondo-claro;
     border-radius: 5px;
     cursor: pointer;
 
     &:hover {
-        background-color: $color-fondo-claro;
-        color: $color-fuentes-claro;
-        border: 2px solid $color-fuentes-claro;
+        border: 3px solid $color-fondo-claro;
+        font-weight: 700;
     }
 }
 
 .siguienteHero {
     position: relative;
+}
+
+.btn-finalizar {
+    text-decoration: none;
+    color: $color-fondo-claro;
+    background-color: $color-fondo-oscuro;
+    padding: 3px;
+    border-radius: 1rem;
+    font-size: 4rem;
+    margin: 0.5rem;
+    display: block;
+    width: 100%;
+    display: flex;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $color-rojo-redes;
+
+    &:hover {
+        border: 2px solid $color-fondo-oscuro;
+        background-color: $color-fondo-claro;
+        color: $color-fondo-oscuro;
+        font-weight: 700;
+    }
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="El mago pollo, es algo payaso, malabares, comedia, stand up, tecnicas teatrales y de esa mezcla salio este artista que tanto disfruta de su actividad">
-    <title>Pollo Magia - Tienda!</title>
+    <title>Pollo Magia - Carrito</title>
     <link rel="icon" type="image/x-icon" href="../img/logo1.png">
 
     <!-- TOASTIFY -->
@@ -47,7 +47,7 @@
                         <a href="./circorodante.html" class="boton">Circo</a>
                     </li>
                     <li class="nav-item my-2">
-                        <a href="./tienda.html" class="botonActual">Tienda</a>
+                        <a href="./tienda.html" class="boton">Tienda</a>
                     </li>
                     <li class="nav-item my-2">
                         <a href="./contacto.html" class="boton">Contacto</a>
@@ -64,24 +64,12 @@
                 <button id="color-mode" class="btn botonDarkEstilo">Oscuro</button>
             </div>
         </div>
-        <h2>Carrito</h2>
-        <div class="carrito tienda">
-            <div id="carrito-vacio">
-                <h3>El chango esta vacio!</h3>
-            </div>
-            <div class="carrito-productos d-none" id="carrito-productos">
-                <!--Esto se completa desde JS-->
-            </div>
-            <div class="carritoTotal">
-                <h2>Total: <span id="carrito-total">$0</span></h2>
-            </div>
-        </div>
-    </section>
-    <!-- Formulario -->
+        <h1>Carrito</h1>
+        <a href="./tienda.html">Volver a la Tienda</a>
 
+        <div id="carrito-pagina"></div>
 
-
-
+        <!-- after class 19-4 minuto 39:40 -->
 
     <!-- footer -->
     <footer class="footer">
@@ -111,6 +99,8 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../js/finalizarCompra.js"></script>
+    <script src="../js/carrito.js"></script>
     <script src="../js/tienda.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/botonDark.js"></script>
