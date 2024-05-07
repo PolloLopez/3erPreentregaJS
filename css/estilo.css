@@ -42,20 +42,9 @@
 }
 
 .botonDark {
-  margin-top: 0.7rem;
+  margin-top: 25px;
+  left: 1rem;
   /* margen al h1 de cada pagina */
-}
-
-.botonDarkEstilo {
-  text-decoration: none;
-  color: #fefefe;
-  background-color: #000000;
-  border: 2px solid #fefefe;
-}
-.botonDarkEstilo:hover {
-  border: 2px solid #000000;
-  background-color: #fefefe;
-  color: rgba(9, 9, 108, 0.9490196078);
 }
 
 .form-control {
@@ -102,6 +91,19 @@
   background-color: #fefefe;
   color: rgba(11, 45, 86, 0.8352941176);
   font-weight: 700;
+}
+
+.botonDarkEstilo {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fefefe;
+  background-color: #000000;
+  border: 2px solid #fefefe;
+}
+.botonDarkEstilo:hover {
+  border: 2px solid #000000;
+  background-color: #fefefe;
+  color: rgba(9, 9, 108, 0.9490196078);
 }
 
 .imgLogo {
@@ -440,6 +442,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   height: 8rem;
   padding: 1rem 0;
+  padding-block: 0.5rem;
   justify-content: space-between;
   align-items: center;
 }
